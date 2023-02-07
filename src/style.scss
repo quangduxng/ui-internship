@@ -1,0 +1,111 @@
+
+$mobile-width : "(max-width: 320px)";
+$tablet-width : "(max-width: 600px )";
+$desktop-width : "(max-width: 768px )";
+
+
+  .container-tab{
+    background-color: #191718;
+    width: 150px;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+.text-name{
+    width: 150px;
+    height: 44px;
+    border-top:  1px solid #5C5C5C; 
+    border-bottom:  1px solid #5C5C5C;
+    &:hover{
+        background-color: #5C5C5C;
+    }
+    a{
+        margin-left: 16px;
+        margin-top: 16px;
+        margin-bottom: 14px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #AAAAAA;
+        text-decoration: none;
+    }
+}
+}
+.container-main{
+    margin-left: 279px;
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-color: #EFEFEF;
+
+        strong{
+            margin-top: 38px;
+            padding-bottom: 18px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+    }
+    .second-text{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 50px;
+        justify-content: center;
+        align-items: center;
+        .text-1{
+           
+            .main-content{
+                margin-top: 18px;
+                display: flex;
+                flex-direction: row;
+                column-gap: 18px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+//MOBLIE
+@media only screen and (max-width: 320px )  {
+    .container-main{
+        .text-title{
+            padding-bottom: 120px;
+            height: auto;
+        }
+    .second-text{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+}
+//tablet
+@media only screen and (max-width: 1025px){
+    .container-main{
+        .text-title{
+            padding-bottom: 30px;
+            width: 100%;
+        }
+    .second-text{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+}
